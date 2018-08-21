@@ -1,0 +1,38 @@
+.experience-box {
+    // background: $blue;
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 170rem;
+}
+
+.experience-box__content {
+    // background: $blue;
+    font-size:$font-size-small;
+    font-weight: 300;
+}
+
+.education-box {
+    //background: $grey;
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 170rem;
+}
+
+.education-box__content {
+    // background: $blue;
+    font-size:$font-size-small;
+    font-weight: 300;
+}
+
+.skills-box {
+    //background: $grey;
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 170rem;
+}
+
+.skills-box__content {
+    // background: $blue;
+    font-size:$font-size-small;
+    font-weight: 300;
+}

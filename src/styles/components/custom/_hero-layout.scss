@@ -1,0 +1,35 @@
+.hero-box {
+    //background: $darker-grey;
+    align-items: center;
+    background: url('/images/arkansas_ave.jpg')  no-repeat center center fixed !important;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+}
+
+.hero-box__title {
+    background: $dark-blue;
+    color: $off-white;
+    font-size: $font-size-xxl;
+    font-weight: 600;
+    text-align: center;
+}
+
+//Keep this current format, could do something with this
+
+.hero-box__content {
+    background: $darker-grey;
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 200rem;
+    p {
+        font-size:$font-size-medium;
+        font-weight: 600;
+        color: $off-white;
+
+    }
+}
+
+.hero-box__social {
+    text-align: center;
+}

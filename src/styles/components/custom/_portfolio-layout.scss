@@ -1,0 +1,12 @@
+.portfolio-box {
+    //background: $blue;
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 170rem;
+}
+
+.portfolio-box__content {
+    // background: $blue;
+    font-size:$font-size-small;
+    font-weight: 200;
+}
