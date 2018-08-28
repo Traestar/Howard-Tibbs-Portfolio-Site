@@ -15,7 +15,7 @@ import {
 
   const HomePage = () => (
     <div>
-    <Segment padded='very' size="massive" className="hero-box">
+    <Segment id="/" padded='very' size="massive" className="hero-box">
       <Container className="hero-box__content">
         <Grid>
           <Header
@@ -32,19 +32,13 @@ import {
           </p>
             <div className="hero-box__social">
               <Button color='skype'>
-                <Icon name='skype' /> Skype
+                <Icon name='skype' /> <a href="skype:howard.tibbs?chat" target="_blank">Skype</a>
               </Button>
               <Button color='twitter'>
-                <Icon name='twitter' /> Twitter
-              </Button>
-              <Button color='google plus'>
-                <Icon name='google plus' /> Google Plus
+                <Icon name='twitter' /> <a href="https://twitter.com/traesql" target="_blank">Twitter</a>
               </Button>
               <Button color='linkedin'>
-                <Icon name='linkedin' /> LinkedIn
-              </Button>
-              <Button color='instagram'>
-                <Icon name='instagram' /> Instagram
+                <Icon name='linkedin' /> <a href="https://www.linkedin.com/in/howardtibbs3/" target="_blank">LinkedIn</a>
               </Button>
             </div>
             {/* <List horizontal>
@@ -68,13 +62,13 @@ import {
     </Segment>
   
     
-      <Segment className="about-box">
+      <Segment id="About" className="about-box">
   
-      <Container id="#About" className="about-box__content">
-        <h2><a href="#About">About Me</a></h2>
+      <Container  className="about-box__content">
+        <h2>About Me</h2>
         <Grid columns={2} divided>
             <Grid.Column width={5}>
-              <Image src='/images/profilepic.jpg' />
+              <Image src='/images/Profile1.jpg' />
             </Grid.Column>
             <Grid.Column width={11}>
               <p>
@@ -84,7 +78,9 @@ import {
               Data Analyst and System Administrator for the Federal Aviation Administration in Egg Harbor Township, NJ over two 
               and a half years.  Furthermore, I have performed statistical analysis for the Radar Registration Group project with 
               Hi-Tech Systems/ASRC and I was responsible for creating an open source CMS portal using HTML, CSS, and JavaScript 
-              in order to save documents, data, records, and other information within a portal. 
+              in order to save documents, data, records, and other information within a portal.
+              </p>
+              <p>
               In addition to working at the FAA, I supported Web Development for the Children’s Hospital of Philadelphia for seven months 
               working with Drupal, Joomla!, and static sites as well as work as Tech Support at Linode troubleshooting through the Linux 
               terminal.  
@@ -96,20 +92,18 @@ import {
           
   
         <h2>Contact Details</h2>
-        {/*
-        <ul class="social">
-            <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-            <li><a href="#"><i class="fa fa-skype"></i>Skype</a></li>
-        </ul>
-        */}
         <List>
           <List.Item as='a'>
-            <Icon name='twitter' />
-            TraeSQL
+            <List.Icon name='twitter' />
+            <List.Content>
+              <a href="https://twitter.com/traesql" target="_blank">TraeSQL</a>
+            </List.Content>
           </List.Item>
           <List.Item as='a'>
-            <Icon name='skype' />
-            howard.tibbs
+            <List.Icon name='skype' />
+            <List.Content>
+              <a href="skype:howard.tibbs?chat" target="_blank">Howard Tibbs</a>
+            </List.Content>
           </List.Item>
         </List>
       </Container>
@@ -117,8 +111,8 @@ import {
   
       <Segment className="experience-box">
   
-        <Container className="experience-box__content">
-          <h2 id="#Experience"><span>Experience</span></h2>
+        <Container id="Experience" className="experience-box__content">
+          <h2><span>Experience</span></h2>
           <h3>PlayerBase</h3>
           <p class="location">Land O' Lakes, Florida</p>
           <p class="info">Software Engineer <span>&bull;</span> <em class="date">February 2018 – </em></p>
@@ -174,30 +168,21 @@ import {
         <Container className="skills-box__content">
       <h2 id="#Skills"><span>Skills</span></h2>
   
-          <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-              eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-              voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-          </p>
-  
           <List>
             <List.Item>
-              ReactJS <Rating defaultRating={4} maxRating={5} disabled />
+              ReactJS <Rating defaultRating={4} maxRating={5} disabled size='huge' />
             </List.Item>
             <List.Item>
-              Javascript <Rating defaultRating={4} maxRating={5} disabled />
+              Javascript <Rating defaultRating={4} maxRating={5} disabled size='huge' />
             </List.Item>
             <List.Item>
-              HTML5 <Rating defaultRating={4} maxRating={5} disabled />
+              HTML5 <Rating defaultRating={4} maxRating={5} disabled size='huge' />
             </List.Item>
             <List.Item>
-              CSS <Rating defaultRating={4} maxRating={5} disabled />
+              CSS <Rating defaultRating={4} maxRating={5} disabled size='huge' />
             </List.Item>
             <List.Item>
-              PHP <Rating defaultRating={3} maxRating={5} disabled />
+              PHP <Rating defaultRating={3} maxRating={5} disabled size='huge' />
             </List.Item>
           </List>
           {/*
@@ -210,9 +195,9 @@ import {
         </Container>
       </Segment>
   
-      <Segment className="portfolio-box">
+      <Segment id="Projects" className="portfolio-box">
 
-        <Container id="#Projects" className="portfolio-box__content">
+        <Container className="portfolio-box__content">
           <Card.Group>
             <Card>
               <Image 
@@ -273,24 +258,18 @@ import {
       </Message>
       */}
   
-      <Segment className="contact-box">
+      <Segment id="Contact" className="contact-box">
         <Container className="contact-box__content">
-        <h2 id="#Contact">Contact Me</h2>
-        <ul class="social">
+        <h2>Contact Me</h2>
+        <ul class="contact-box__social">
           <Button color='skype'>
-            <Icon name='skype' /> Skype
+            <Icon name='skype' /> <a href="skype:howard.tibbs?chat" target="_blank">Skype</a>
           </Button>
           <Button color='twitter'>
-            <Icon name='twitter' /> Twitter
-          </Button>
-          <Button color='google plus'>
-            <Icon name='google plus' /> Google Plus
+            <Icon name='twitter' /> <a href="https://twitter.com/traesql" target="_blank">Twitter</a>
           </Button>
           <Button color='linkedin'>
-            <Icon name='linkedin' /> LinkedIn
-          </Button>
-          <Button color='instagram'>
-            <Icon name='instagram' /> Instagram
+            <Icon name='linkedin' /> <a href="https://www.linkedin.com/in/howardtibbs3/" target="_blank">LinkedIn</a>
           </Button>
         </ul>
         </Container>

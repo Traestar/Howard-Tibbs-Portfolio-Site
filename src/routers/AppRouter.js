@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 //import ContactPage from '../components/ContactPage';
 //import EditPortfolio from '../components/EditPortfolio';
-import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 import HomePage from '../components/HomePage';
 import NotFoundPage from '../components/NotFoundPage';
 //import PortfolioPage from '../components/PortfolioPage';
@@ -10,7 +10,7 @@ import NotFoundPage from '../components/NotFoundPage';
 const AppRouter = () => (
     <BrowserRouter>
         <div>
-        <Header />
+        <Navbar />
         <Switch>
             <Route path="/" component={HomePage} exact={true} />
             {/*
