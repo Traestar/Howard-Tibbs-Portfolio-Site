@@ -63,7 +63,7 @@ class PortfolioBox extends React.Component {
                             <Card.Content>
                                 <Card.Header>Project 3</Card.Header>
                                 <Card.Meta>
-                                <span className='date'>Created in 2018</span>
+                                <span className='date'>Created in 2018 Again</span>
                                 </Card.Meta>
                                 <Card.Description>Portfolio Site</Card.Description>
                             </Card.Content>
